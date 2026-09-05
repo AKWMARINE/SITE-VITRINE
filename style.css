@@ -266,10 +266,29 @@ nav a:hover{opacity:1}nav a:hover::after{transform:scaleX(1)}
 .final-cta{text-align:center;padding:110px 25px 100px;background:linear-gradient(180deg, rgba(93,109,82,0.96), rgba(80,96,71,0.96));color:#fff}
 .final-cta>p:not(.eyebrow){max-width:560px;margin:0 auto 24px;color:rgba(255,255,255,0.85)}
 .final-cta .eyebrow{color:rgba(255,255,255,0.82)}
-footer{background:var(--black);color:#fff;padding:50px 6vw 35px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:end}
+footer{background:var(--black);color:#fff;padding:50px 6vw 35px;display:grid;grid-template-columns:1.2fr .9fr 1fr;gap:42px;align-items:start}
 footer strong{display:block;font:700 28px var(--display);letter-spacing:.18em}
 footer span{font-size:7px;letter-spacing:.3em}
 footer p{font:italic 16px var(--serif);color:#cdc6bb}
+footer a{display:block;width:max-content;color:rgba(255,255,255,0.82);font-size:11px;letter-spacing:.08em;line-height:2.1;transition:color .25s ease, transform .25s ease}
+footer a:hover{color:var(--champ);transform:translateX(3px)}
+footer .footer-links a{display:flex;align-items:center;gap:10px}
+footer .social-icon{display:grid;place-items:center;width:25px;height:25px;border-radius:7px;color:#fff;line-height:1}
+.social-icon svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.icon-instagram{background:linear-gradient(135deg,#f7c45b,#e95a6f 52%,#7c4d9e)}
+.icon-tiktok{background:#111;border:1px solid rgba(255,255,255,.35)}
+.icon-facebook{background:#1877f2}
+.icon-whatsapp{background:#25d366}
+.icon-facebook svg{stroke-width:2.4}
+footer .footer-label{font:600 10px "Montserrat","Arial",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--champ);margin-bottom:12px}
+footer .footer-main>p{margin-top:22px}
+.footer-payment>p:not(.footer-label){max-width:290px;font-size:12px;line-height:1.7}
+.payment-methods{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.payment-method{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-radius:6px;background:rgba(255,255,255,.08);font-size:10px;letter-spacing:.04em;color:#fff}
+.payment-method b{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;font:700 11px "Montserrat","Arial",sans-serif}
+.payment-wave b{background:#19b5fe;color:#fff}
+.payment-orange b{background:#ff7900;color:#fff;font-size:8px}
+.footer-payment-link{margin-top:13px;border-bottom:1px solid rgba(201,170,115,0.7);padding-bottom:3px;color:#fff}
 footer small{grid-column:1/-1;border-top:1px solid rgba(255,255,255,0.12);padding-top:20px;color:rgba(255,255,255,0.66);font-size:9px}
 .page-credit{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.12);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
 .page-credit strong{display:inline;font-size:10px;letter-spacing:.12em}
@@ -298,5 +317,5 @@ footer small{grid-column:1/-1;border-top:1px solid rgba(255,255,255,0.12);paddin
   .collection-poster,.collection-poster img{min-height:300px}.collection-copy h3{font-size:40px}
   .model-info{grid-template-columns:30px 1fr}.model-info b{grid-column:2}.model-info a{grid-column:2}
   .chat{padding:24px 12px}.message{max-width:86%}
-  footer{grid-template-columns:1fr}footer small{grid-column:auto}
+  footer{grid-template-columns:1fr;gap:30px}footer small{grid-column:auto}
 }
